@@ -16,7 +16,7 @@ function getTargetCharacters() {
       let text = el.textContent[0];
       return text;
     })
-    .map(c => keyOverrides.hasOwnProperty(c) ? keyOverrides[c] : c); // convert special characters
+    .map(c => keyOverrides.hasOwnProperty(c) ? keyOverrides[c] : c);
   return chrs;
 }
 
@@ -32,7 +32,7 @@ function introduceErrors(chrs) {
   const totalErrors = Math.floor(chrs.length * (1 - accuracy));
   for (let i = 0; i < totalErrors; i++) {
     const index = Math.floor(Math.random() * chrs.length);
-    chrs[index] = String.fromCharCode(Math.floor(Math.random() * 26) + 97); // random lowercase letter
+    chrs[index] = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
   }
   return chrs;
 }
