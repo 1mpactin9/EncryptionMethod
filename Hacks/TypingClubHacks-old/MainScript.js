@@ -1,3 +1,9 @@
+// This script types for you automatically on TypingClub:
+// 1. Open the website
+// 2. Go into a level
+// 3. Open Console (F12) Google Development Tools
+// 4. Paste the script and press ENTER
+
 const initialStartDelay = 1500;
 let minDelay = 45;
 let maxDelay = 50;
@@ -223,3 +229,10 @@ async function autoPlay() {
 }
 
 autoPlay();
+
+// This is an enhanced version of Domiii's Script
+// Credits to https://gist.github.com/Domiii/52cf49d780ec8c9f01771973c36197af
+// This Script adds Logging, Error Simulation (Accuracy Control), Speed Calculation (WPM Control)
+// This Script provides a more realistic typing simulation
+// The Script Fails on the Newest Version of TypingClub, see the new one
+// -Bruno
