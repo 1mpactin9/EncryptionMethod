@@ -1,23 +1,27 @@
+/*
+--- AUTOTYPER FOR TYPINGCLUB.COM ---
+This script automates typing on TypingClub with human-like speed and accuracy.
+To use, paste this code into the browser console while on a TypingClub lesson page.
+
+--- NOTES ---
+- This design works as for in December 22, 2025
+- This script only works in the old version of TypingClub
+- The new version of TypingClub blocks such scripts
+*/
+
 (async () => {
   console.log("🚀 Starting Manual Control Autotyper...");
 
-  // --- CONFIGURATION (EDIT THESE) ---
-
+  // --- CONFIGURATION ---
   // SPEED SETTINGS (in milliseconds)
-  // Lower numbers = Faster. Higher numbers = Slower.
-  const minDelay = 30; // Fastest allowed speed between keys
-  const maxDelay = 150; // Slowest allowed speed between keys
-  const targetDelay = 70; // The average speed you want to maintain
-
+  const minDelay = 30; // SHORTEST DELAY BETWEEN KEYS
+  const maxDelay = 150; // LONGEST DELAY BETWEEN KEYS
+  const targetDelay = 70; // AVERAGE DELAY BETWEEN KEYS
   // ACCURACY SETTINGS
-  // realAccuracy: 95 means 5% of characters will be TYPED WRONG and LEFT WRONG.
-  const realAccuracy = 95;
-
-  // fakeAccuracy: 90 means 10% of the *correct* characters will be mistyped, then backspaced, then fixed.
-  const fakeAccuracy = 90;
+  const realAccuracy = 95; // IN PERCENTAGE
+  const fakeAccuracy = 90; // IN PERCENTAGE
 
   // --- HELPERS ---
-
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
   // Generates a delay that hovers around targetDelay but stays within min/max
@@ -38,7 +42,6 @@
   };
 
   // --- SETUP ---
-
   const inputField =
     document.querySelector('input[aria-hidden="true"]') ||
     document.activeElement;
@@ -64,8 +67,7 @@
   const characters = getChars();
   if (characters.length === 0) return console.error("❌ No characters found.");
 
-  // --- TYPING ENGINE ---
-
+  // --- TYPING ---
   const forceType = async (char) => {
     inputField.focus();
 
@@ -124,37 +126,40 @@
   };
 
   // --- MAIN LOOP ---
-
   for (let i = 0; i < characters.length; i++) {
     const char = characters[i];
 
-    // 1. CHECK REAL ACCURACY (Permanent Errors)
-    // If this fails, we type a wrong letter and MOVE ON (do not fix it).
+    // 1. REAL ACCURACY
     if (Math.random() * 100 > realAccuracy) {
       const wrongChar = getRandomWrongChar(char);
       await forceType(wrongChar);
       await sleep(getHumanDelay());
-      continue; // Skip to the next character loop (leaving the error behind)
+      continue;
     }
 
-    // 2. CHECK FAKE ACCURACY (Corrected Errors)
-    // If this fails, we type wrong -> wait -> backspace -> wait -> type correct.
+    // 2. FAKE ACCURACY
     if (Math.random() * 100 > fakeAccuracy) {
       const wrongChar = getRandomWrongChar(char);
 
-      // Type wrong
+      // ERR
       await forceType(wrongChar);
       await sleep(getHumanDelay());
 
-      // Backspace
+      // ERRVLD
       await forceType("Backspace");
-      await sleep(getHumanDelay() + 50); // Little extra delay for "realization"
+      await sleep(getHumanDelay() + 50); // EXTRA DELAY
     }
 
-    // 3. TYPE CORRECTLY
+    // VLD
     await forceType(char);
     await sleep(getHumanDelay());
   }
 
   console.log("🏁 Typing Complete.");
 })();
+
+// This is V4 of New TypingClub Autotyper
+// This Script provides control over speed and accuracy
+// The Script Fails on the Newest Version of TypingClub, use the old version
+// The Script still works in December 22, 2025
+// -Bruno
