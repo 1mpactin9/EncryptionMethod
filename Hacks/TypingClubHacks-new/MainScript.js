@@ -30,13 +30,6 @@ for (let c of "types something") {
 }
 */
 
-const minWPM = 90;
-const maxWPM = 110;
-const targetWPM = 95;
-
-const fakeAccuracy = 98;
-const realAccuracy = 100;
-
 (async () => {
   console.log("🚀 Starting Final Refined Autotyper...");
 
