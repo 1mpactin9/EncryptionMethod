@@ -10,9 +10,10 @@
 [![License](https://img.shields.io/badge/License-MIT-important?style=flat-square)](#)
 
 <p align="center">
-    <a href="## Features">Features</a> •
-    <a href="## Installation">Installation</a> •
-    <a href="## Disclaimer">Installation</a>
+    <a href="#features">Features</a> •
+    <a href="#installation">Installation</a> •
+    <a href="#versions">Installation</a> •
+    <a href="#disclaimer">Installation</a>
 </p>
 
 ---
@@ -73,6 +74,14 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+---
+
+## Versions
+
+Unorganized Encryption Version: https://github.com/1mpactin9/EncryptionMethod/tree/ea9e8774107631eaa911c0d81f19c3da81ee54ab
+
+New Typing Club Hack Release Latest Version: https://github.com/1mpactin9/EncryptionMethod/commit/00bc89ab62dd832c009fa4335f44a50105a6db66
 
 ---
 
