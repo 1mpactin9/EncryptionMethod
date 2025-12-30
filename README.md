@@ -12,8 +12,8 @@
 <p align="center">
     <a href="#features">Features</a> •
     <a href="#installation">Installation</a> •
-    <a href="#versions">Installation</a> •
-    <a href="#disclaimer">Installation</a>
+    <a href="#versions">Versions</a> •
+    <a href="#disclaimer">Disclaimer</a>
 </p>
 
 ---
