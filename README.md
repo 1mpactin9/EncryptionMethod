@@ -24,6 +24,8 @@
 
 This repository contains a comprehensive collection of encryption methods and tools, ranging from classical to quantum approaches:
 
+**TYPING CLUB HACK:** https://github.com/1mpactin9/EncryptionMethod/blob/main/Hacks/AutoTyper-latest/Perferences.js
+
 ### Single Layer Encryption
 - **RSA Encryption**: Basic RSA encryption and decryption implementations
 - **MARS Algorithm**: MARS encryption combined with AES for enhanced security
