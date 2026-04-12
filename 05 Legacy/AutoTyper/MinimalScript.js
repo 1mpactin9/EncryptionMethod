@@ -206,4 +206,3 @@ autoPlay();
 // Credits to https://gist.github.com/Domiii/52cf49d780ec8c9f01771973c36197af
 // This script adds typing speed and typing accuracy control as well as a better key event simulation
 // Formatted with Prettier
-// -Bruno

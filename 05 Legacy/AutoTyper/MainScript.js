@@ -235,4 +235,3 @@ autoPlay();
 // This Script adds Logging, Error Simulation (Accuracy Control), Speed Calculation (WPM Control)
 // This Script provides a more realistic typing simulation
 // The Script Fails on the Newest Version of TypingClub, see the new one
-// -Bruno

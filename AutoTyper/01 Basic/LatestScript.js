@@ -161,5 +161,4 @@ To use, paste this code into the browser console while on a TypingClub lesson pa
 // This is V4 of New TypingClub Autotyper
 // This Script provides control over speed and accuracy
 // The Script Fails on the Newest Version of TypingClub, use the old version
-// The Script still works in December 22, 2025
-// -Bruno
+// The Script still works in April 2026
