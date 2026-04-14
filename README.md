@@ -4,9 +4,7 @@
 
 **A bundle of Ecnryption and Decryption scripts**
 
-[![Verified](https://img.shields.io/badge/Identity-Verified-brightgreen?style=flat-square&logo=github)](https://github.com/yourusername)
 [![Python Version](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/Status-Complete-success?style=flat-square&logo=github-actions&logoColor=white)](#)
 [![License](https://img.shields.io/badge/License-MIT-important?style=flat-square)](#)
 
 <p align="center">
@@ -37,6 +35,12 @@ DevTools: F12 or Ctrl+Shift+I or Three Dots > More Tools > Developer Tools
 
 Within the script, changing the constants as shown in the script changes the speed and accuracy. The preset is aiming for around 90 WPM for [Typing Club](typingclub.com).
 
+> [!IMPORTANT]
+> Users MUST turn ofF block on error(s) feature in Typing Club to ensure consistency of fake accuracy implementation
+
+> [!CAUTION]
+> An accuracy config so low, would cause problems
+
 ### Automated Autotyper Script:
 Page: [Tampermonkey Script.js](/AutoTyper/03%20Advanced/)
 
@@ -53,6 +57,12 @@ Page: [Tampermonkey Script.js](/AutoTyper/03%20Advanced/)
 9. If not Enable userscripts
 10. Modify settings, toggle Scrap or enter lessons manually
 11. START!
+
+> [!NOTE]
+> The latest script has updated WPM-targeted calculation, changing the WPM variable directly indicates targeting WPMs, this may be slightly inaccurate due to the unpredictability of Typing Clubs WPM System
+
+> [!CAUTION]
+> I do not take responsbility if you over use this script, this script was created for fun and for learning, please use it at your own risks
 
 ## Features
 
@@ -109,4 +119,6 @@ pip install -r requirements.txt
 
 Parts of this repository may have been generated or assisted by AI tools.
 While efforts have been made to review and validate the content, it may contain errors or inaccuracies.
-Use at your own risk.
+
+> [!CAUTION]
+> Use at your own risk.
