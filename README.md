@@ -42,7 +42,7 @@ Within the script, changing the constants as shown in the script changes the spe
 > An accuracy config so low, would cause problems
 
 ### Automated Autotyper Script:
-Page: [Tampermonkey Script.js](/AutoTyper/03%20Advanced/)
+Page: [Tampermonkey Script.js](/AutoTyper/02%20Intermediate/)
 
 **How to use?**
 
