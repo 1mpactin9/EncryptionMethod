@@ -2,7 +2,7 @@
 
 # 🐍 Encryption Method
 
-**A bundle of Ecnryption and Decryption scripts**
+*Thrilled to announce* [**Fully Automated AutoTyper**](#automated-autotyper-script)
 
 [![Python Version](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-important?style=flat-square)](#)
@@ -42,7 +42,7 @@ Within the script, changing the constants as shown in the script changes the spe
 > An accuracy config so low, would cause problems
 
 ### Automated Autotyper Script:
-Page: [Tampermonkey Script.js](/AutoTyper/02%20Intermediate/)
+Page: [Tampermonkey Script.js](/AutoTyper/02%20Intermediate/Script.js)
 
 **How to use?**
 
