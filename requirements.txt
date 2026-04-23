@@ -1,9 +1,0 @@
-colorama
-cryptography
-numpy
-pycryptodome
-qiskit
-rich
-rsa
-torch
-tqdm
