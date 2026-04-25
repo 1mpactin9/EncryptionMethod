@@ -7,8 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Added
-- A new "Avault" project, rust based storng encryption communication method
-- Starting a new major update 1.0.0
+- Vanilla web render for minimal resource
+- Network and Storage core code
+
+## 0.9.0 - 2026-4-25
+### Added
+- Basic folder structure for the new project (name yet determined)
+- Added core cryptography logic
+- Modular roadmap
+
+### Changed
+- Moved py previous code under src-tauri/crypto/py
 
 ## 0.8.3 - 2026-04-23
 ### Changed
