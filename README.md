@@ -1,69 +1,56 @@
 <div align="center">
 
-# 🐍 Encryption Method
+# 🐍 Avaultic
 
 <p align="center">
     <a href="#features">Features</a> •
     <a href="#installation">Installation</a> •
     <a href="#disclaimer">Disclaimer</a>
 </p>
-
 </div>
 
-## Features
+**VLT** is a:
+- highly secure
+- local-first
 
+desktop password manager written in Tauri Typescript Frontend and Rust Backend. It is designed from the ground up with:
+- strict cryptographic hygiene
+- memory safety
+- robust file system interactions.
+
+Rather than reinventing the wheel, VLT utilizes state-of-the-art cryptographic primitives (Argon2id, XChaCha20-Poly1305) and enforces defensive programming paradigms to protect your data at rest, in transit, and in memory.
+
+
+## Features
 For **AutoTyper** please move to https://github.com/1mpactin9/AutoTyper
 
 This repository contains a comprehensive collection of encryption methods and tools, ranging from classical to quantum approaches:
 
-### Single Layer Encryption
-- **RSA Encryption**: Basic RSA encryption and decryption implementations
-- **MARS Algorithm**: MARS encryption combined with AES for enhanced security
-- **Custom EDS**: Custom encryption/decryption schemes
-- **Simple EDS**: Simplified encryption/decryption systems
-
-### Multi Layer Encryption
-- **Customizable EDS**: Flexible encryption/decryption with customizable parameters
-- **Customizable ES**: Enhanced security with customizable encryption schemes
-- **Enhanced Visualization**: RSA-based encryption with visualization capabilities
-- **Integrated 1 and 3**: Combined encryption methods (layers 1 and 3)
-- **MLC EDS**: Multi-layer custom encryption/decryption system
-- **MultiLayered EDS**: Advanced multi-layer encryption/decryption
-- **PyCrypto 3 Layer**: Three-layer encryption using PyCrypto library
-
-### Advanced Crypto
-- **Encryptors**: Advanced encryption tools with key management
-- **Generators**: Hex key generators for secure key creation
-- **Secrets**: Secret generation and encryption utilities
-
-### Quantum Computing
-- **Quantum Encryption**: Quantum-resistant encryption implementations in Q#
-- **Quantum Hashing**: Quantum hashing algorithms using VQE (Variational Quantum Eigensolver)
-- **Quantum Demos**: Sample quantum encryption demonstrations
-
-### Automation Tools
-- **AutoTyper Scripts**: Automated typing scripts for typing club training (various versions from initial to latest)
-
-### Experimental & Failed Attempts
-- **Failed Implementations**: Documentation of unsuccessful encryption attempts (AES, Vaultic) for learning purposes
+### Security Features:
+- **Two-key design:** master key encrypts a vault key, so passwords can be changed instantly without re-encrypting everything.
+- **XChaCha20-Poly1305:** uses large random nonces to avoid reuse vulnerabilities.
+- **AAD chaining:** binds header, keys, and data to detect any tampering.
+- **Memory safety:** keys are protected, zeroed on drop, and kept out of disk swapping.
+- *Atomic writes:* temp file → fsync → rename ensures no corruption on crashes.
+- **KDF limits:** validates Argon2id parameters to prevent weak or abusive settings.
 
 ## Installation
-
 ```bash
 # 1. Clone
-git clone git@github.com:1mpactin9/EncryptionMethod.git
+git clone git@github.com:1mpactin9/Encryption.git
+# or
+gh repo clone 1mpactin9/Encryption
 
 # 2. Enter directory
-cd EncryptionMethod
+cd Encryption
 
 # 3. Setup
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
+pnpm install
+pnpm tauri dev
+pnpm tauri build
 ```
+or downloading an official Release from https://github.com/1mpactin9/Encryption/releases
 
 ## Disclaimer
-
 Parts of this repository may have been generated or assisted by AI tools.
 While efforts have been made to review and validate the content, it may contain errors or inaccuracies. Use at your own risk.
