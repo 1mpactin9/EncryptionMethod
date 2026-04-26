@@ -6,11 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
-### Added
-- Vanilla web render for minimal resource
-- Network and Storage core code
+### Changed
+- Fix bugs
 
-## 0.9.0 - 2026-4-25
+## 0.10.1 - 2026-04-26
+### Added
+- the whole backend
+- connected both components
+- everything running (lots of bugs)
+
+## 0.10.0 - 2026-04-26
+### Added
+- the whole initial update frontend for the new project
+- basic structure backend
+
+## 0.9.0 - 2026-04-25
 ### Added
 - Basic folder structure for the new project (name yet determined)
 - Added core cryptography logic
